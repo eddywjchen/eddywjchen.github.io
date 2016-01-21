@@ -210,7 +210,7 @@
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Jan 21 2016 21:18:41 GMT+0800">
+    <time itemprop="datePublished" content="Thu Jan 21 2016 21:27:32 GMT+0800">
 	
 		    Jan 21, 2016
     	
@@ -224,20 +224,11 @@
                     <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="u6D41_u7A0B_u56FE"><a href="#u6D41_u7A0B_u56FE" class="headerlink" title="流程图"></a>流程图</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st=&#62;start: Start&#10;e=&#62;end&#10;op=&#62;operation: My Operation&#10;cond=&#62;condition: Yes or No?&#10;&#10;st-&#62;op-&#62;cond&#10;cond(yes)-&#62;e&#10;cond(no)-&#62;op</span><br></pre></td></tr></table></figure>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><h3 id="u4EE3_u7801_u5757"><a href="#u4EE3_u7801_u5757" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="decorator">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="prompt">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span><br><span class="line"><span class="prompt">... </span>prompt'''</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'xxx'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<h3 id="u590D_u9009_u6846"><a href="#u590D_u9009_u6846" class="headerlink" title="复选框"></a>复选框</h3><p>使用 <code>- [ ]</code> 和 <code>- [x]</code> 语法可以创建复选框，实现 todo-list 等功能。例如：</p>
-<ul>
-<li>[x] 已完成事项</li>
-<li>[ ] 待办事项1</li>
-<li>[ ] 待办事项2</li>
-</ul>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
                     
@@ -263,15 +254,15 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2016/01/21/my_first_blog/">
-                            (no title)
+                        <a class="link-unstyled" href="/2016/01/02/my_first_blog/">
+                            我的第一篇博客
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Jan 21 2016 21:03:00 GMT+0800">
+    <time itemprop="datePublished" content="Sat Jan 02 2016 20:20:01 GMT+0800">
 	
-		    Jan 21, 2016
+		    Jan 02, 2016
     	
     </time>
     
@@ -280,7 +271,7 @@
             
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <h1 id="u6211_u7684_u7B2C_u4E00_u7BC7_u535A_u5BA2"><a href="#u6211_u7684_u7B2C_u4E00_u7BC7_u535A_u5BA2" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h1><p>##概览</p>
+                    <p>##概览</p>
 <ul>
 <li>###为什么要写博客</li>
 <li>###心灵鸡汤 </li>
@@ -299,7 +290,7 @@
                     
                     
                         <p>
-                            <a href="/2016/01/21/my_first_blog/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2016/01/02/my_first_blog/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>
