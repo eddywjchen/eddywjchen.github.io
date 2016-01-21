@@ -37,11 +37,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
+    <title><![CDATA[First Blog]]></title>
     <link href="http://yoursite.com/2016/01/02/my_first_blog/"/>
     <id>http://yoursite.com/2016/01/02/my_first_blog/</id>
     <published>2016-01-02T12:20:01.000Z</published>
-    <updated>2016-01-21T13:30:07.000Z</updated>
+    <updated>2016-01-21T13:33:34.000Z</updated>
     <content type="html"><![CDATA[<p>##概览</p>
 <ul>
 <li>###为什么要写博客</li>
