@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-25T10:58:01.000Z</updated>
+  <updated>2016-03-25T11:04:05.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2016/03/25/java_multithread/"/>
     <id>http://yoursite.com/2016/03/25/java_multithread/</id>
     <published>2016-03-25T01:37:40.000Z</published>
-    <updated>2016-03-25T10:58:01.000Z</updated>
+    <updated>2016-03-25T11:04:05.000Z</updated>
     <content type="html"><![CDATA[<h3 id="u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B"><a href="#u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B" class="headerlink" title="&#x786C;&#x4EF6;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;"></a>&#x786C;&#x4EF6;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;</h3><p>&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BD4;&#x8F83;&#x62BD;&#x8C61;&#x3002;&#x4E0B;&#x9762;&#x4F1A;&#x4EE5;&#x628A;&#x8FD0;&#x884C;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6BD4;&#x55BB;&#x6210;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x3002;</p>
 <ul>
 <li><strong><em>&#x786C;&#x4EF6;</em></strong>&#x3002;&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5382;&#x623F;&#x3001;&#x4EEA;&#x5668;&#x3001;&#x7535;&#x529B;&#x7B49;tt&#x3002;<br><img src="/2016/03/25/java_multithread/a.jpg" alt="img" title="&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5382;&#x623F;&#x3001;&#x673A;&#x5668;"></li>
@@ -47,7 +47,11 @@
     <![CDATA[<h3 id="u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B"><a href="#u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u]]>
     </summary>
     
-      <category term="编程" scheme="http://yoursite.com/categories/programming/"/>
+      <category term="JAVA" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="多线程" scheme="http://yoursite.com/tags/multithread/"/>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/java/"/>
     
   </entry>
   
@@ -56,7 +60,7 @@
     <link href="http://yoursite.com/2016/02/23/expectations_in_2016/"/>
     <id>http://yoursite.com/2016/02/23/expectations_in_2016/</id>
     <published>2016-02-22T16:04:40.000Z</published>
-    <updated>2016-02-23T14:57:52.000Z</updated>
+    <updated>2016-03-25T11:05:45.000Z</updated>
     <content type="html"><![CDATA[<h3 id="u5DE5_u4F5C_u4E0A"><a href="#u5DE5_u4F5C_u4E0A" class="headerlink" title="&#x5DE5;&#x4F5C;&#x4E0A;"></a>&#x5DE5;&#x4F5C;&#x4E0A;</h3><ul>
 <li><p><strong><em>&#x5E0C;&#x671B;&#x80FD;&#x591F;&#x4E3B;&#x5BFC;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;</em></strong>&#x3002;&#x901A;&#x8FC7;&#x4E3B;&#x5BFC;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;&#xFF0C;&#x63D0;&#x9AD8;&#x81EA;&#x5DF1;&#x5728;&#x9700;&#x6C42;&#x83B7;&#x53D6;&#xFF0C;&#x9700;&#x6C42;&#x6F84;&#x6E05;&#xFF0C;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x65B9;&#x9762;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5728;&#x4E1A;&#x52A1;&#x80FD;&#x529B;&#x8FD9;&#x4E00;&#x8584;&#x5F31;&#x73AF;&#x8282;&#x53BB;&#x505A;&#x66F4;&#x591A;&#x6C89;&#x6DC0;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x4E3B;&#x5BFC;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;&#x5BF9;&#x6C9F;&#x901A;&#x534F;&#x4F5C;&#xFF0C;&#x8BA1;&#x5212;&#x5B89;&#x6392;&#x7B49;&#x8F6F;&#x80FD;&#x529B;&#x8981;&#x6C42;&#x66F4;&#x9AD8;&#xFF0C;&#x80FD;&#x591F;&#x8BA9;&#x4E2A;&#x4EBA;&#x7EFC;&#x5408;&#x80FD;&#x529B;&#x5F97;&#x5230;&#x5145;&#x5206;&#x953B;&#x70BC;&#x3002;</p>
 </li>
@@ -88,6 +92,10 @@
     <summary type="html">
     <![CDATA[<h3 id="u5DE5_u4F5C_u4E0A"><a href="#u5DE5_u4F5C_u4E0A" class="headerlink" title="&#x5DE5;&#x4F5C;&#x4E0A;"></a>&#x5DE5;&#x4F5C;&#x4E0A;</h3]]>
     </summary>
+    
+      <category term="感想&amp;总结" scheme="http://yoursite.com/tags/thinkings/"/>
+    
+      <category term="Others" scheme="http://yoursite.com/categories/others/"/>
     
   </entry>
   
