@@ -199,13 +199,75 @@
 <section class="postShorten-group main-content-wrap">
     
     
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2016/03/27/java_multithread/">
+                            Java多线程
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" content="Sun Mar 27 2016 23:00:40 GMT+0800">
+	
+		    Mar 27, 2016
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/java/">JAVA</a>
+
+
+    
+</div>
+            </div>
+            
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h3 id="u7EBF_u7A0B_u7684_u521B_u5EFA_u4E0E_u542F_u52A8"><a href="#u7EBF_u7A0B_u7684_u521B_u5EFA_u4E0E_u542F_u52A8" class="headerlink" title="&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x4E0E;&#x542F;&#x52A8;"></a>&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x4E0E;&#x542F;&#x52A8;</h3><p>Java&#x4F7F;&#x7528;Thread&#x7C7B;&#x4EE3;&#x8868;&#x7EBF;&#x7A0B;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x7A0B;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x5FC5;&#x987B;&#x662F;Thread&#x7C7B;&#x548C;&#x5176;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="u7EE7_u627FThread_u7C7B"><a href="#u7EE7_u627FThread_u7C7B" class="headerlink" title="&#x7EE7;&#x627F;Thread&#x7C7B;"></a>&#x7EE7;&#x627F;Thread&#x7C7B;</h4><ol>
+<li>&#x7EE7;&#x627F;Thread&#x7C7B;</li>
+<li>&#x91CD;&#x5199;run&#x65B9;&#x6CD5;</li>
+<li>&#x8C03;&#x7528;start&#x6765;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;</li>
+</ol>
+<h4 id="u5B9E_u73B0Runnable_u63A5_u53E3"><a href="#u5B9E_u73B0Runnable_u63A5_u53E3" class="headerlink" title="&#x5B9E;&#x73B0;Runnable&#x63A5;&#x53E3;"></a>&#x5B9E;&#x73B0;Runnable&#x63A5;&#x53E3;</h4><ol>
+<li>&#x5B9E;&#x73B0;Runnable&#x63A5;&#x53E3;</li>
+<li>&#x91CD;&#x5199;run&#x65B9;&#x6CD5;</li>
+<li>&#x5C06;Runnable&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x4F5C;&#x4E3A;target&#x521B;&#x5EFA;Thread&#x5B9E;&#x4F8B;</li>
+</ol>
+<h3 id="u7EBF_u7A0B_u7684_u751F_u547D_u5468_u671F"><a href="#u7EBF_u7A0B_u7684_u751F_u547D_u5468_u671F" class="headerlink" title="&#x7EBF;&#x7A0B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"></a>&#x7EBF;&#x7A0B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h3><p>&#x5F53;&#x7EBF;&#x7A0B;&#x88AB;&#x521B;&#x5EFA;&#x5E76;&#x542F;&#x52A8;&#x4EE5;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x9A6C;&#x4E0A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x4E00;&#x76F4;&#x5904;&#x4E8E;&#x67D0;&#x4E2A;&#x72B6;&#x6001;&#x3002;&#x5728;&#x7EBF;&#x7A0B;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#xFF0C;&#x603B;&#x5171;&#x6709;&#x65B0;&#x5EFA;&#x3001;&#x5C31;&#x7EEA;&#x3001;&#x8FD0;&#x884C;&#x3001;&#x963B;&#x585E;&#x3001;&#x6B7B;&#x4EA1;&#x4E94;&#x79CD;&#x72B6;&#x6001;&#x3002;&#x7EBF;&#x7A0B;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4E0D;&#x80FD;&#x4E00;&#x76F4;&#x9738;&#x5360;&#x7740;CPU,CPU&#x4F1A;&#x5728;&#x4E0D;&#x540C;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5207;&#x6362;&#xFF0C;&#x4E8E;&#x662F;&#x7EBF;&#x7A0B;&#x4F1A;&#x591A;&#x6B21;&#x5728;&#x8FD0;&#x884C;&#x3001;&#x963B;&#x585E;&#x95F4;&#x5207;&#x6362;&#x3002;</p>
+<h4 id="u65B0_u5EFA_u4E0E_u5C31_u7EEA"><a href="#u65B0_u5EFA_u4E0E_u5C31_u7EEA" class="headerlink" title="&#x65B0;&#x5EFA;&#x4E0E;&#x5C31;&#x7EEA;"></a>&#x65B0;&#x5EFA;&#x4E0E;&#x5C31;&#x7EEA;</h4><pre><code>new&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x540E;&#xFF0C;&#x8BE5;&#x7EBF;&#x7A0B;&#x5C31;&#x5904;&#x4E8E;&#x65B0;&#x5EFA;&#x72B6;&#x6001;&#x3002;&#x6B64;&#x65F6;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;java&#x5BF9;&#x8C61;&#xFF0C;java&#x865A;&#x62DF;&#x673A;&#x4E3A;&#x5176;&#x5206;&#x914D;&#x4E86;&#x5185;
+&#x5B58;&#xFF0C;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x4E86;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3002;&#x5F53;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x4E86;start&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x8BE5;&#x7EBF;&#x7A0B;&#x5C31;&#x5904;&#x4E8E;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#xFF0C;java&#x865A;&#x62DF;&#x673A;&#x4F1A;&#x4E3A;&#x5176;
+&#x521B;&#x5EFA;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x6808;&#x548C;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#x3002;&#x5B83;&#x8868;&#x793A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#xFF0C;&#x4F46;&#x4F55;&#x65F6;&#x8FD0;&#x884C;&#x53D6;&#x51B3;&#x4E8E;java&#x865A;&#x62DF;&#x673A;&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x5668;&#x7684;&#x8C03;&#x5EA6;&#x3002;
+</code></pre><h4 id="u8FD0_u884C_u4E0E_u963B_u585E"><a href="#u8FD0_u884C_u4E0E_u963B_u585E" class="headerlink" title="&#x8FD0;&#x884C;&#x4E0E;&#x963B;&#x585E;"></a>&#x8FD0;&#x884C;&#x4E0E;&#x963B;&#x585E;</h4>
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2016/03/27/java_multithread/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
     <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
         <div class="postShorten-wrap">
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2016/03/25/java_multithread/">
-                            Java多线程
+                        <a class="link-unstyled" href="/2016/03/25/process_thread/">
+                            进程与线程
                         </a>
                     
                 </h1>
@@ -229,9 +291,9 @@
                 <div class="postShorten-excerpt" itemprop="articleBody">
                     <h3 id="u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B"><a href="#u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B" class="headerlink" title="&#x786C;&#x4EF6;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;"></a>&#x786C;&#x4EF6;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;</h3><p>&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BD4;&#x8F83;&#x62BD;&#x8C61;&#x3002;&#x4E0B;&#x9762;&#x4F1A;&#x4EE5;&#x628A;&#x8FD0;&#x884C;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6BD4;&#x55BB;&#x6210;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x3002;</p>
 <ul>
-<li><p><strong><em>&#x786C;&#x4EF6;</em></strong>&#x3002;&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5382;&#x623F;&#x3001;&#x4EEA;&#x5668;&#x3001;&#x7535;&#x529B;&#x7B49;&#x3002;<br><img src="/2016/03/25/java_multithread/a.jpg" alt="img" title="&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5382;&#x623F;&#x3001;&#x673A;&#x5668;"></p></li></ul>
+<li><p><strong><em>&#x786C;&#x4EF6;</em></strong>&#x3002;&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5382;&#x623F;&#x3001;&#x4EEA;&#x5668;&#x3001;&#x7535;&#x529B;&#x7B49;&#x3002;<br><img src="/2016/03/25/process_thread/a.jpg" alt="img" title="&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5382;&#x623F;&#x3001;&#x673A;&#x5668;"></p></li></ul>
                     
-                        <a href="/2016/03/25/java_multithread/" class="postShorten-excerpt_link link">
+                        <a href="/2016/03/25/process_thread/" class="postShorten-excerpt_link link">
                             Continue reading
                         </a>
                         
