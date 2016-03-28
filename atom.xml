@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-28T16:27:57.000Z</updated>
+  <updated>2016-03-28T16:30:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2016/03/27/java_multithread/"/>
     <id>http://yoursite.com/2016/03/27/java_multithread/</id>
     <published>2016-03-27T15:00:40.000Z</published>
-    <updated>2016-03-28T16:27:57.000Z</updated>
+    <updated>2016-03-28T16:30:25.000Z</updated>
     <content type="html"><![CDATA[<h3 id="u7EBF_u7A0B_u7684_u521B_u5EFA_u4E0E_u542F_u52A8"><a href="#u7EBF_u7A0B_u7684_u521B_u5EFA_u4E0E_u542F_u52A8" class="headerlink" title="&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x4E0E;&#x542F;&#x52A8;"></a>&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x4E0E;&#x542F;&#x52A8;</h3><p>Java&#x4F7F;&#x7528;Thread&#x7C7B;&#x4EE3;&#x8868;&#x7EBF;&#x7A0B;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x7A0B;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x5FC5;&#x987B;&#x662F;Thread&#x7C7B;&#x548C;&#x5176;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
 <h5 id="u7EE7_u627FThread_u7C7B"><a href="#u7EE7_u627FThread_u7C7B" class="headerlink" title="&#x7EE7;&#x627F;Thread&#x7C7B;"></a>&#x7EE7;&#x627F;Thread&#x7C7B;</h5><ol>
 <li>&#x7EE7;&#x627F;Thread&#x7C7B;</li>
