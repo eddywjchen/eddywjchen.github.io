@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="To Be Better">
-    <title>进程与线程 - To Be Better</title>
+    <title>Docker 入门 - To Be Better</title>
     <meta name="author" content="Eddy Chen">
     
         <meta name="keywords" content="eddy chen,Eddy Chen,hexo,javascript,">
@@ -15,22 +15,28 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="&amp;#x786C;&amp;#x4EF6;&amp;#x3001;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x3001;&amp;#x8FDB;&amp;#x7A0B;&amp;#x3001;&amp;#x7EBF;&amp;#x7A0B;&amp;#x8FDB;&amp;#x7A0B;&amp;#x548C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x662F;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;&amp;#x6982;">
+    <meta name="description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;Docker
+Docker&amp;#x662F;&amp;#x57FA;&amp;#x4E8E;&amp;#x5BB9;&amp;#x5668;&amp;#x6280;&amp;#x672F;&amp;#x7684;&amp;#x8F7B;&amp;#x91CF;&amp;#x7EA7;&amp;#x865A;&amp;#x62DF;&amp;#x5316;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6848;&amp;#xFF0C;&amp;#x662F;&amp;#x">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="进程与线程">
-<meta property="og:url" content="http://yoursite.com/2016/03/25/process_thread/index.html">
+<meta property="og:title" content="Docker 入门">
+<meta property="og:url" content="http://yoursite.com/2016/03/25/docker-introduction/index.html">
 <meta property="og:site_name" content="To Be Better">
-<meta property="og:description" content="&amp;#x786C;&amp;#x4EF6;&amp;#x3001;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x3001;&amp;#x8FDB;&amp;#x7A0B;&amp;#x3001;&amp;#x7EBF;&amp;#x7A0B;&amp;#x8FDB;&amp;#x7A0B;&amp;#x548C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x662F;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;&amp;#x6982;">
-<meta property="og:image" content="http://yoursite.com/2016/03/25/process_thread/a.jpg">
-<meta property="og:image" content="http://yoursite.com/2016/03/25/process_thread/b.jpg">
-<meta property="og:image" content="http://yoursite.com/2016/03/25/process_thread/c.jpg">
-<meta property="og:image" content="http://yoursite.com/2016/03/25/process_thread/d.jpg">
-<meta property="og:image" content="http://yoursite.com/2016/03/25/process_thread/e.jpg">
-<meta property="og:image" content="http://yoursite.com/2016/03/25/process_thread/f.jpg">
-<meta property="og:updated_time" content="2016-03-28T11:30:26.000Z">
+<meta property="og:description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;Docker
+Docker&amp;#x662F;&amp;#x57FA;&amp;#x4E8E;&amp;#x5BB9;&amp;#x5668;&amp;#x6280;&amp;#x672F;&amp;#x7684;&amp;#x8F7B;&amp;#x91CF;&amp;#x7EA7;&amp;#x865A;&amp;#x62DF;&amp;#x5316;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6848;&amp;#xFF0C;&amp;#x662F;&amp;#x">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/docker.jpg">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/WhatIsDocker_2_VMs_0-2_2.png">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/WhatIsDocker_3_Containers_2_0.png">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/a.jpg">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/b.jpg">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/c.jpg">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/d.jpg">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/e.jpg">
+<meta property="og:image" content="http://yoursite.com/2016/03/25/docker-introduction/f.jpg">
+<meta property="og:updated_time" content="2016-10-31T15:04:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="进程与线程">
-<meta name="twitter:description" content="&amp;#x786C;&amp;#x4EF6;&amp;#x3001;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x3001;&amp;#x8FDB;&amp;#x7A0B;&amp;#x3001;&amp;#x7EBF;&amp;#x7A0B;&amp;#x8FDB;&amp;#x7A0B;&amp;#x548C;&amp;#x7EBF;&amp;#x7A0B;&amp;#x662F;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;&amp;#x6982;">
+<meta name="twitter:title" content="Docker 入门">
+<meta name="twitter:description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;Docker
+Docker&amp;#x662F;&amp;#x57FA;&amp;#x4E8E;&amp;#x5BB9;&amp;#x5668;&amp;#x6280;&amp;#x672F;&amp;#x7684;&amp;#x8F7B;&amp;#x91CF;&amp;#x7EA7;&amp;#x865A;&amp;#x62DF;&amp;#x5316;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6848;&amp;#xFF0C;&amp;#x662F;&amp;#x">
 <meta name="twitter:creator" content="@eddychen">
     
     
@@ -207,7 +213,7 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            进程与线程
+            Docker 入门
         </h1>
     
     <div class="post-meta">
@@ -219,7 +225,7 @@
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/java/">JAVA</a>
+    <a class="category-link" href="/categories/DOCKER/">DOCKER</a>
 
 
     
@@ -228,25 +234,29 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <h3 id="u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B"><a href="#u786C_u4EF6_u3001_u64CD_u4F5C_u7CFB_u7EDF_u3001_u8FDB_u7A0B_u3001_u7EBF_u7A0B" class="headerlink" title="&#x786C;&#x4EF6;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;"></a>&#x786C;&#x4EF6;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;</h3><p>&#x8FDB;&#x7A0B;&#x548C;&#x7EBF;&#x7A0B;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BD4;&#x8F83;&#x62BD;&#x8C61;&#x3002;&#x4E0B;&#x9762;&#x4F1A;&#x4EE5;&#x628A;&#x8FD0;&#x884C;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6BD4;&#x55BB;&#x6210;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x3002;</p>
+            <h3 id="u4EC0_u4E48_u662FDocker"><a href="#u4EC0_u4E48_u662FDocker" class="headerlink" title="&#x4EC0;&#x4E48;&#x662F;Docker"></a>&#x4EC0;&#x4E48;&#x662F;Docker</h3><p><img src="/2016/03/25/docker-introduction/docker.jpg" alt="img"></p>
+<p>Docker&#x662F;&#x57FA;&#x4E8E;&#x5BB9;&#x5668;&#x6280;&#x672F;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x865A;&#x62DF;&#x5316;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#xFF0C;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6253;&#x5305;&#x4ED6;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x4EE5;&#x53CA;&#x4F9D;&#x8D56;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x5E03;&#x5230;&#x4EFB;&#x4F55;&#x6D41;&#x884C;&#x7684; Linux &#x673A;&#x5668;&#x4E0A;&#x3002;<br>Docker&#x539F;&#x7406;&#x662F;&#x5229;&#x7528;Linux&#x6838;&#x5FC3;&#x4E2D;&#x7684;&#x8D44;&#x6E90;&#x5206;&#x79BB;&#x673A;&#x5236;&#xFF0C;&#x4F8B;&#x5982;cgroups&#xFF0C;&#x4EE5;&#x53CA;Linux&#x6838;&#x5FC3;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF08;name space&#xFF09;&#xFF0C;&#x6765;&#x5EFA;&#x7ACB;&#x72EC;&#x7ACB;&#x7684;&#x8F6F;&#x4EF6;&#x5BB9;&#x5668;&#x3002;</p>
+<p>Build once&#xFF0C;Run anywhere.</p>
+<p><img src="/2016/03/25/docker-introduction/WhatIsDocker_2_VMs_0-2_2.png" alt="img"></p>
+<p><img src="/2016/03/25/docker-introduction/WhatIsDocker_3_Containers_2_0.png" alt="img"></p>
 <ul>
-<li><p><strong><em>&#x786C;&#x4EF6;</em></strong>&#x3002;&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5382;&#x623F;&#x3001;&#x4EEA;&#x5668;&#x3001;&#x7535;&#x529B;&#x7B49;&#x3002;<br><img src="/2016/03/25/process_thread/a.jpg" alt="img" title="&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5382;&#x623F;&#x3001;&#x673A;&#x5668;"></p>
+<li><p><strong><em>&#x786C;&#x4EF6;</em></strong>&#x3002;&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5382;&#x623F;&#x3001;&#x4EEA;&#x5668;&#x3001;&#x7535;&#x529B;&#x7B49;&#x3002;<br><img src="/2016/03/25/docker-introduction/a.jpg" alt="img" title="&#x786C;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x5382;&#x623F;&#x3001;&#x673A;&#x5668;"></p>
 <a id="more"></a>
 <!-- <img src='a.jpg' width='200' height='200'> -->
 </li>
-<li><p><strong><em>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</em></strong>&#x3002;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x662F;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x4E0E;&#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#xFF0C;&#x662F;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x786C;&#x4EF6;&#x4E0A;&#x7684;&#x6700;&#x57FA;&#x672C;&#x7684;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#xFF0C;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x652F;&#x6301;&#x4E0B;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x7684;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;&#xFF0C;&#x7BA1;&#x7406;&#x7740;&#x5DE5;&#x5382;&#x7684;&#x4EBA;&#x3001;&#x7269;&#x4E0E;&#x4E8B;&#x3002;<br><img src="/2016/03/25/process_thread/b.jpg" alt="img" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5F53;&#x4E8E;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;"></p>
+<li><p><strong><em>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</em></strong>&#x3002;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x662F;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#x8BA1;&#x7B97;&#x673A;&#x786C;&#x4EF6;&#x4E0E;&#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#xFF0C;&#x662F;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x786C;&#x4EF6;&#x4E0A;&#x7684;&#x6700;&#x57FA;&#x672C;&#x7684;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#xFF0C;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x652F;&#x6301;&#x4E0B;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x7684;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;&#xFF0C;&#x7BA1;&#x7406;&#x7740;&#x5DE5;&#x5382;&#x7684;&#x4EBA;&#x3001;&#x7269;&#x4E0E;&#x4E8B;&#x3002;<br><img src="/2016/03/25/docker-introduction/b.jpg" alt="img" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5F53;&#x4E8E;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;"></p>
 </li>
 <li><p><strong><em>&#x7A0B;&#x5E8F;&#x4E0E;&#x8FDB;&#x7A0B;</em></strong>&#x3002;&#x7A0B;&#x5E8F;&#x53EA;&#x662F;&#x4E00;&#x7EC4;&#x6307;&#x4EE4;&#x7684;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x5B83;&#x672C;&#x8EAB;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8FD0;&#x884C;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7684;&#x5B9E;&#x4F53;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x5382;&#x91CC;&#x67D0;&#x4E2A;&#x4EA7;&#x54C1;&#x7684;&#x751F;&#x4EA7;&#x6B65;&#x9AA4;&#x8BF4;&#x660E;&#x4E66;&#x3002;&#x8FDB;&#x7A0B;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x72EC;&#x7ACB;&#x529F;&#x80FD;&#x7684;&#x7A0B;&#x5E8F;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x7684;&#x52A8;&#x6001;&#x6267;&#x884C;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x548C;&#x8C03;&#x5EA6;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x57FA;&#x4E8E;&#x751F;&#x4EA7;&#x6B65;&#x9AA4;&#x8BF4;&#x660E;&#x4E66;&#x548C;&#x751F;&#x4EA7;&#x539F;&#x6599;&#x8FDB;&#x884C;&#x751F;&#x4EA7;&#x6D3B;&#x52A8;&#x7684;&#x751F;&#x4EA7;&#x8F66;&#x95F4;&#xFF0C;&#x8F66;&#x95F4;&#x662F;&#x5DE5;&#x5382;&#x8FDB;&#x884C;&#x7269;&#x8D44;&#x8C03;&#x914D;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;&#x3002;</p>
 <!--![img](java_multithread/c.jpg "操作系统相当于管理体系与机制") -->
-<p><img src="/2016/03/25/process_thread/c.jpg" width="400" height="400"></p>
+<p><img src="/2016/03/25/docker-introduction/c.jpg" width="400" height="400"></p>
 </li>
 <li><p><strong><em>&#x7EBF;&#x7A0B;</em></strong>&#x3002;&#x7EBF;&#x7A0B;&#x662F;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x4E2D;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x6D41;&#xFF0C;&#x662F;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x6700;&#x5C0F;&#x5355;&#x5143;&#xFF0C;&#x662F;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x5668;&#x8C03;&#x5EA6;&#x548C;&#x5206;&#x6D3E;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;&#x3002;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x5404;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x8FDB;&#x7A0B;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x5728;&#x540C;&#x4E00;&#x8F66;&#x95F4;&#x4E0B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5DE5;&#x4EBA;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x751F;&#x4EA7;&#x6D3B;&#x52A8;&#xFF0C;&#x6BCF;&#x4E2A;&#x8FDB;&#x884C;&#x751F;&#x4EA7;&#x6D3B;&#x52A8;&#x7684;&#x5DE5;&#x4EBA;&#x90FD;&#x662F;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#xFF0C;&#x4ED6;&#x4EEC;&#x5171;&#x4EAB;&#x8F66;&#x95F4;&#x7684;&#x8D44;&#x6E90;&#x3002;</p>
 <!-- ![img](java_multithread/d.jpg "操作系统相当于管理体系与机制") -->
-<p><img src="/2016/03/25/process_thread/d.jpg" width="400" height="400"></p>
+<p><img src="/2016/03/25/docker-introduction/d.jpg" width="400" height="400"></p>
 </li>
-<li><p><strong><em>&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x8D44;&#x6E90;</em></strong>&#x3002;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x6709;&#x8FDB;&#x7A0B;&#x4EE3;&#x7801;&#x6BB5;&#x3001;&#x516C;&#x6709;&#x6570;&#x636E;&#x3001;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x7B49;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x751F;&#x4EA7;&#x8F66;&#x95F4;&#x7684;&#x539F;&#x6599;&#x3001;&#x751F;&#x4EA7;&#x624B;&#x518C;&#x7B49;&#x3002;&#x7EBF;&#x7A0B;&#x72EC;&#x4EAB;&#x7684;&#x8D44;&#x6E90;&#x6709;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x6808;&#xFF0C;&#x5BC4;&#x5B58;&#x5668;&#x7B49;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x4EBA;&#x7684;&#x5E72;&#x6D3B;&#x5DE5;&#x5177;&#x3001;&#x5B89;&#x5168;&#x5E3D;&#x3001;&#x50A8;&#x7269;&#x67DC;&#x7B49;&#x3002;<br><img src="/2016/03/25/process_thread/e.jpg" alt="img" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5F53;&#x4E8E;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;"></p>
+<li><p><strong><em>&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x8D44;&#x6E90;</em></strong>&#x3002;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x6709;&#x8FDB;&#x7A0B;&#x4EE3;&#x7801;&#x6BB5;&#x3001;&#x516C;&#x6709;&#x6570;&#x636E;&#x3001;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x7B49;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x751F;&#x4EA7;&#x8F66;&#x95F4;&#x7684;&#x539F;&#x6599;&#x3001;&#x751F;&#x4EA7;&#x624B;&#x518C;&#x7B49;&#x3002;&#x7EBF;&#x7A0B;&#x72EC;&#x4EAB;&#x7684;&#x8D44;&#x6E90;&#x6709;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x6808;&#xFF0C;&#x5BC4;&#x5B58;&#x5668;&#x7B49;&#x3002;&#x76F8;&#x5F53;&#x4E8E;&#x5DE5;&#x4EBA;&#x7684;&#x5E72;&#x6D3B;&#x5DE5;&#x5177;&#x3001;&#x5B89;&#x5168;&#x5E3D;&#x3001;&#x50A8;&#x7269;&#x67DC;&#x7B49;&#x3002;<br><img src="/2016/03/25/docker-introduction/e.jpg" alt="img" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5F53;&#x4E8E;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;"></p>
 </li>
-<li><p><strong><em>&#x8D44;&#x6E90;&#x9501;(&#x540C;&#x6B65;&#x9501;)</em></strong>&#x3002;&#x6709;&#x4E9B;&#x8FDB;&#x7A0B;&#x8D44;&#x6E90;&#x5141;&#x8BB8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#xFF0C;&#x6709;&#x4E9B;&#x8D44;&#x6E90;&#x4E0D;&#x5141;&#x8BB8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x3002;&#x5982;&#x8F66;&#x95F4;&#x5141;&#x8BB8;&#x5927;&#x5BB6;&#x51FA;&#x51FA;&#x5165;&#x5165;&#xFF0C;&#x4F46;&#x662F;&#x5395;&#x6240;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x53EA;&#x5141;&#x8BB8;&#x4E00;&#x4EBA;&#x8FDB;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x540C;&#x65F6;&#x4E24;&#x4E2A;&#x4EBA;&#x8FDB;&#x51FA;&#x5C31;&#x4F1A;&#x6709;&#x95EE;&#x9898;&#x3002;&#x90A3;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4E3A;&#x8FD9;&#x4E9B;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x6DFB;&#x52A0;&#x540C;&#x6B65;&#x9501;&#x3002;<br><img src="/2016/03/25/process_thread/f.jpg" alt="img" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5F53;&#x4E8E;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;"></p>
+<li><p><strong><em>&#x8D44;&#x6E90;&#x9501;(&#x540C;&#x6B65;&#x9501;)</em></strong>&#x3002;&#x6709;&#x4E9B;&#x8FDB;&#x7A0B;&#x8D44;&#x6E90;&#x5141;&#x8BB8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#xFF0C;&#x6709;&#x4E9B;&#x8D44;&#x6E90;&#x4E0D;&#x5141;&#x8BB8;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x3002;&#x5982;&#x8F66;&#x95F4;&#x5141;&#x8BB8;&#x5927;&#x5BB6;&#x51FA;&#x51FA;&#x5165;&#x5165;&#xFF0C;&#x4F46;&#x662F;&#x5395;&#x6240;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x53EA;&#x5141;&#x8BB8;&#x4E00;&#x4EBA;&#x8FDB;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x540C;&#x65F6;&#x4E24;&#x4E2A;&#x4EBA;&#x8FDB;&#x51FA;&#x5C31;&#x4F1A;&#x6709;&#x95EE;&#x9898;&#x3002;&#x90A3;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4E3A;&#x8FD9;&#x4E9B;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x6DFB;&#x52A0;&#x540C;&#x6B65;&#x9501;&#x3002;<br><img src="/2016/03/25/docker-introduction/f.jpg" alt="img" title="&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5F53;&#x4E8E;&#x7BA1;&#x7406;&#x4F53;&#x7CFB;&#x4E0E;&#x673A;&#x5236;"></p>
 </li>
 </ul>
 <p>&#x73B0;&#x4EE3;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x90FD;&#x652F;&#x6301;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x5373;&#x5927;&#x90E8;&#x5206;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x90FD;&#x652F;&#x6301;&#x591A;&#x8FDB;&#x7A0B;&#x5E76;&#x53D1;&#x3002;&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x5728;&#x5F00;&#x7740;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x7684;&#x7F16;&#x7801;&#x7684;&#x540C;&#x65F6;&#x80FD;&#x542C;&#x97F3;&#x4E50;&#x548C;&#x5F00;&#x7740;&#x6D4F;&#x89C8;&#x5668;&#x67E5;&#x6587;&#x6863;&#xFF0C;&#x540C;&#x65F6;&#x7CFB;&#x7EDF;&#x5E95;&#x5C42;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x652F;&#x6491;&#x6027;&#x8FDB;&#x7A0B;&#x5728;&#x8FD0;&#x884C;&#x3002;&#x770B;&#x8D77;&#x6765;&#x8FD9;&#x4E9B;&#x8FDB;&#x7A0B;&#x597D;&#x50CF;&#x662F;&#x5728;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x3002;&#x4E8B;&#x5B9E;&#x7684;&#x771F;&#x76F8;&#x662F;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;CPU&#x800C;&#x8A00;&#xFF0C;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x8282;&#x70B9;&#x4E0A;&#x53EA;&#x80FD;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EA;&#x80FD;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x3002;&#x7CFB;&#x7EDF;&#x6839;&#x636E;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;&#x5206;&#x914D;CPU&#x65F6;&#x95F4;&#x7247;&#x7ED9;&#x4E0D;&#x540C;&#x8FDB;&#x7A0B;&#x8F6E;&#x8F6C;&#x6267;&#x884C;&#x3002;CPU&#x7684;&#x6267;&#x884C;&#x901F;&#x5EA6;&#x5F88;&#x5FEB;&#xFF0C;&#x6240;&#x4EE5;&#x867D;&#x7136;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8FDB;&#x7A0B;&#x95F4;&#x8F6E;&#x6362;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x611F;&#x89C9;&#x8FD9;&#x4E9B;&#x8FDB;&#x7A0B;&#x597D;&#x50CF;&#x662F;&#x5728;&#x540C;&#x65F6;&#x5DE5;&#x4F5C;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x591A;&#x6838;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x786E;&#x5B9E;&#x4F1A;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x540C;&#x65F6;&#x6267;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x4F46;&#x8FDB;&#x7A0B;&#x6570;&#x603B;&#x662F;&#x8FDC;&#x8FDC;&#x5927;&#x4E8E;cpu&#x6570;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x8FD8;&#x662F;&#x8981;&#x6309;&#x7167;&#x89C4;&#x5219;&#x7B49;&#x5F85;&#x83B7;&#x53D6;cpu&#x65F6;&#x95F4;&#x7247;&#x8F6E;&#x8F6C;&#x6267;&#x884C;&#x3002;</p>
@@ -262,7 +272,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/java/">JAVA</a> <a class="tag tag--primary tag--small t-link" href="/tags/multithread/">多线程</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/docker/">docker</a> <a class="tag tag--primary tag--small t-link" href="/tags/linux/">linux</a>
 
             </div>
         
@@ -271,7 +281,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/03/27/java_multithread/"  data-tooltip="Java多线程">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/03/25/process_thread/"  data-tooltip="进程与线程">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -279,7 +289,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/03/25/docker-introduction/" data-tooltip="Docker 入门">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/02/23/expectations_in_2016/" data-tooltip="2016年的一些想法">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -294,17 +304,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -352,7 +362,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/03/27/java_multithread/"  data-tooltip="Java多线程">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/03/25/process_thread/"  data-tooltip="进程与线程">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -360,7 +370,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/03/25/docker-introduction/" data-tooltip="Docker 入门">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/02/23/expectations_in_2016/" data-tooltip="2016年的一些想法">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -375,17 +385,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -411,17 +421,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="3">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2016/03/25/process_thread/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2016/03/25/docker-introduction/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
@@ -478,9 +488,9 @@
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'http://yoursite.com/2016/03/25/process_thread/';
+                 this.page.url = 'http://yoursite.com/2016/03/25/docker-introduction/';
                  
-                    this.page.identifier = '2016/03/25/process_thread/';
+                    this.page.identifier = '2016/03/25/docker-introduction/';
                                   
              };
             (function() {
